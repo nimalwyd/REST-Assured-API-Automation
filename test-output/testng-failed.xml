@@ -2,17 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Rest assured test APIs]">
   <test name="Rest assured test APIs(failed)">
+    <groups>
+      <run>
+        <include name="Basic Tests"/>
+      </run>
+    </groups>
     <classes>
+      <class name="com.qa.test.TestApiScenario1">
+        <methods>
+          <include name="postSpecificUser"/>
+        </methods>
+      </class> <!-- com.qa.test.TestApiScenario1 -->
       <class name="com.qa.configurations.RestAssuredConfiguration">
         <methods>
           <include name="Configuration"/>
         </methods>
       </class> <!-- com.qa.configurations.RestAssuredConfiguration -->
-      <class name="com.qa.test.TestApiScenario1">
-        <methods>
-          <include name="testUsers"/>
-        </methods>
-      </class> <!-- com.qa.test.TestApiScenario1 -->
     </classes>
   </test> <!-- Rest assured test APIs(failed) -->
 </suite> <!-- Failed suite [Rest assured test APIs] -->

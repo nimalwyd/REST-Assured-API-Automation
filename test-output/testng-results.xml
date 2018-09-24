@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Rest assured test APIs" duration-ms="3210" started-at="2018-09-23T19:43:11Z" finished-at="2018-09-23T19:43:14Z">
+  <suite name="Rest assured test APIs" duration-ms="14094" started-at="2018-09-24T01:12:10Z" finished-at="2018-09-24T01:12:24Z">
     <groups>
+      <group name="Basic Tests">
+        <method signature="TestApiScenario1.getSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getSpecificUser" class="com.qa.test.TestApiScenario1"/>
+        <method signature="TestApiScenario1.getUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getUsers" class="com.qa.test.TestApiScenario1"/>
+        <method signature="TestApiScenario1.postSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="postSpecificUser" class="com.qa.test.TestApiScenario1"/>
+      </group> <!-- Basic Tests -->
     </groups>
-    <test name="Rest assured test APIs" duration-ms="3210" started-at="2018-09-23T19:43:11Z" finished-at="2018-09-23T19:43:14Z">
+    <test name="Rest assured test APIs" duration-ms="14094" started-at="2018-09-24T01:12:10Z" finished-at="2018-09-24T01:12:24Z">
       <class name="com.qa.test.TestApiScenario1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.TestApiScenario1@754ba872]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-23T15:43:12Z" finished-at="2018-09-23T15:43:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.TestApiScenario1@754ba872]" name="testUsers" duration-ms="2508" started-at="2018-09-23T15:43:12Z" data-provider="getdata" finished-at="2018-09-23T15:43:14Z">
+        <test-method status="PASS" signature="getUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getUsers" duration-ms="11389" started-at="2018-09-23T21:12:11Z" data-provider="getdata" finished-at="2018-09-23T21:12:22Z">
           <params>
             <param index="0">
               <value>
@@ -31,10 +32,18 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUsers -->
+        </test-method> <!-- getUsers -->
+        <test-method status="PASS" signature="getSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getSpecificUser" duration-ms="1404" started-at="2018-09-23T21:12:22Z" finished-at="2018-09-23T21:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSpecificUser -->
+        <test-method status="PASS" signature="postSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="postSpecificUser" duration-ms="580" started-at="2018-09-23T21:12:24Z" finished-at="2018-09-23T21:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postSpecificUser -->
       </class> <!-- com.qa.test.TestApiScenario1 -->
       <class name="com.qa.configurations.RestAssuredConfiguration">
-        <test-method status="PASS" signature="Configuration()[pri:0, instance:com.qa.configurations.RestAssuredConfiguration@1a968a59]" name="Configuration" is-config="true" duration-ms="442" started-at="2018-09-23T15:43:11Z" finished-at="2018-09-23T15:43:11Z">
+        <test-method status="PASS" signature="Configuration()[pri:0, instance:com.qa.configurations.RestAssuredConfiguration@13deb50e]" name="Configuration" is-config="true" duration-ms="429" started-at="2018-09-23T21:12:10Z" finished-at="2018-09-23T21:12:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Configuration -->

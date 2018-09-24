@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Rest_assured_test_APIs">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content passed suite-Rest_assured_test_APIs">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Rest_assured_test_APIs" title="com.qa.test.TestApiScenario1" hash-for-method="testUsers(1.0, yes, message)">testUsers(1.0, yes, message)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Rest_assured_test_APIs" title="com.qa.test.TestApiScenario1" hash-for-method="getSpecificUser">getSpecificUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rest_assured_test_APIs" title="com.qa.test.TestApiScenario1" hash-for-method="getUsers(1.0, yes, message)">getUsers(1.0, yes, message)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rest_assured_test_APIs" title="com.qa.test.TestApiScenario1" hash-for-method="postSpecificUser">postSpecificUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Rest_assured_test_APIs -->
@@ -124,10 +134,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testUsers(1.0, yes, message)">
-                  </a> <!-- testUsers(1.0, yes, message) -->
-                  <span class="method-name">testUsers</span>
+                  <a name="getSpecificUser">
+                  </a> <!-- getSpecificUser -->
+                  <span class="method-name">getSpecificUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUsers(1.0, yes, message)">
+                  </a> <!-- getUsers(1.0, yes, message) -->
+                  <span class="method-name">getUsers</span>
                   <span class="parameters">(1.0, yes, message)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postSpecificUser">
+                  </a> <!-- postSpecificUser -->
+                  <span class="method-name">postSpecificUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,6 +167,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Rest assured test APIs&quot;&gt;
   &lt;test name=&quot;Rest assured test APIs&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Basic Tests&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.test.TestApiScenario1&quot;/&gt;
       &lt;class name=&quot;com.qa.configurations.RestAssuredConfiguration&quot;/&gt;
@@ -169,6 +198,22 @@
             <span class="header-content">Groups for Rest assured test APIs</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Basic Tests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getSpecificUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getUsers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">postSpecificUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Rest_assured_test_APIs" class="panel">
@@ -185,16 +230,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testUsers')
+data.setCell(0, 1, 'getUsers')
 data.setCell(0, 2, 'com.qa.test.TestApiScenario1')
-data.setCell(0, 3, 2508);
+data.setCell(0, 3, 11389);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getSpecificUser')
+data.setCell(1, 2, 'com.qa.test.TestApiScenario1')
+data.setCell(1, 3, 1404);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'postSpecificUser')
+data.setCell(2, 2, 'com.qa.test.TestApiScenario1')
+data.setCell(2, 3, 580);
 window.suiteTableData['Rest_assured_test_APIs']= { tableData: data, tableDiv: 'times-div-Rest_assured_test_APIs'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Rest_assured_test_APIs">
               </div> <!-- times-div-Rest_assured_test_APIs -->
             </div> <!-- times-div -->
@@ -228,13 +281,17 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.test.TestApiScenario1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">1139 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testUsers(1.0, yes, message)</span>
-                <span class="method-start">1140 ms</span>
+                <span class="method-name">getUsers(1.0, yes, message)</span>
+                <span class="method-start">1109 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSpecificUser</span>
+                <span class="method-start">12504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postSpecificUser</span>
+                <span class="method-start">13939 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

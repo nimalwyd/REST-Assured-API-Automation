@@ -4,14 +4,19 @@
 
 	<listeners>
 	</listeners>
-
-
 	<test name="Rest assured test APIs">
+		<groups>
+			<run>
+				<include name="Basic Tests"></include>
+			</run>
+		</groups>
+
+
 		<classes>
 			<class name="com.qa.test.TestApiScenario1"></class>
 			<class name="com.qa.configurations.RestAssuredConfiguration"></class>
-			
-			
+
+
 		</classes>
 	</test>
 </suite>
