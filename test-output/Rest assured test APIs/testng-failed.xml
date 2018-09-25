@@ -10,7 +10,7 @@
     <classes>
       <class name="com.qa.test.TestApiScenario1">
         <methods>
-          <include name="postSpecificUser"/>
+          <include name="modifySpecicUser"/>
         </methods>
       </class> <!-- com.qa.test.TestApiScenario1 -->
       <class name="com.qa.configurations.RestAssuredConfiguration">

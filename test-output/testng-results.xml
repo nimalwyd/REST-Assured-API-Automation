@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Rest assured test APIs" duration-ms="14094" started-at="2018-09-24T01:12:10Z" finished-at="2018-09-24T01:12:24Z">
+  <suite name="Rest assured test APIs" duration-ms="5412" started-at="2018-09-25T01:36:16Z" finished-at="2018-09-25T01:36:21Z">
     <groups>
       <group name="Basic Tests">
+        <method signature="TestApiScenario1.deleteSpecicUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="deleteSpecicUser" class="com.qa.test.TestApiScenario1"/>
         <method signature="TestApiScenario1.getSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getSpecificUser" class="com.qa.test.TestApiScenario1"/>
         <method signature="TestApiScenario1.getUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getUsers" class="com.qa.test.TestApiScenario1"/>
+        <method signature="TestApiScenario1.modifySpecicUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="modifySpecicUser" class="com.qa.test.TestApiScenario1"/>
         <method signature="TestApiScenario1.postSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="postSpecificUser" class="com.qa.test.TestApiScenario1"/>
       </group> <!-- Basic Tests -->
     </groups>
-    <test name="Rest assured test APIs" duration-ms="14094" started-at="2018-09-24T01:12:10Z" finished-at="2018-09-24T01:12:24Z">
+    <test name="Rest assured test APIs" duration-ms="5412" started-at="2018-09-25T01:36:16Z" finished-at="2018-09-25T01:36:21Z">
       <class name="com.qa.test.TestApiScenario1">
-        <test-method status="PASS" signature="getUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getUsers" duration-ms="11389" started-at="2018-09-23T21:12:11Z" data-provider="getdata" finished-at="2018-09-23T21:12:22Z">
+        <test-method status="PASS" signature="getUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getUsers" duration-ms="2319" started-at="2018-09-24T21:36:17Z" data-provider="getdata" finished-at="2018-09-24T21:36:19Z">
           <params>
             <param index="0">
               <value>
@@ -33,17 +35,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUsers -->
-        <test-method status="PASS" signature="getSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getSpecificUser" duration-ms="1404" started-at="2018-09-23T21:12:22Z" finished-at="2018-09-23T21:12:24Z">
+        <test-method status="PASS" signature="getSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="getSpecificUser" duration-ms="838" started-at="2018-09-24T21:36:19Z" finished-at="2018-09-24T21:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSpecificUser -->
-        <test-method status="PASS" signature="postSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="postSpecificUser" duration-ms="580" started-at="2018-09-23T21:12:24Z" finished-at="2018-09-23T21:12:24Z">
+        <test-method status="PASS" signature="postSpecificUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="postSpecificUser" duration-ms="671" started-at="2018-09-24T21:36:20Z" finished-at="2018-09-24T21:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postSpecificUser -->
+        <test-method status="PASS" signature="modifySpecicUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="modifySpecicUser" duration-ms="441" started-at="2018-09-24T21:36:20Z" finished-at="2018-09-24T21:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySpecicUser -->
+        <test-method status="PASS" signature="deleteSpecicUser()[pri:0, instance:com.qa.test.TestApiScenario1@343f4d3d]" name="deleteSpecicUser" duration-ms="418" started-at="2018-09-24T21:36:21Z" finished-at="2018-09-24T21:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSpecicUser -->
       </class> <!-- com.qa.test.TestApiScenario1 -->
       <class name="com.qa.configurations.RestAssuredConfiguration">
-        <test-method status="PASS" signature="Configuration()[pri:0, instance:com.qa.configurations.RestAssuredConfiguration@13deb50e]" name="Configuration" is-config="true" duration-ms="429" started-at="2018-09-23T21:12:10Z" finished-at="2018-09-23T21:12:10Z">
+        <test-method status="PASS" signature="Configuration()[pri:0, instance:com.qa.configurations.RestAssuredConfiguration@13deb50e]" name="Configuration" is-config="true" duration-ms="449" started-at="2018-09-24T21:36:15Z" finished-at="2018-09-24T21:36:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Configuration -->
